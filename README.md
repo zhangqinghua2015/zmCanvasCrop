@@ -18,7 +18,7 @@ canvas实现前端完全剪裁图片并上传base64码
   base64 = base64.substring(base64.indexOf("base64,")+"base64,".length());  
   //用的spring的工具类  
   byte[] bytes = Base64Utils.decodeFromString(base64);  
-  //将bytes写入文件，用的apache工具类  
+  //将bytes写入文件，用的apache工具类  
   FileUtils.writeByteArrayToFile(targetFile, bytes);  
 
 # 当前仍然是demo状态，代码有待后续做更好的封装
