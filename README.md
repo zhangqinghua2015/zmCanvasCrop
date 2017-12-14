@@ -15,7 +15,7 @@ canvas实现前端完全剪裁图片并上传base64码
   1. 可维护性强
   
   
-  base64 = base64.substring(base64.indexOf("base64,")+"base64,".length());
+  base64 = base64.substring(base64.indexOf("base64,")+"base64,".length());  
   byte[] bytes = Base64Utils.decodeFromString(base64);
   将bytes写入文件
 
